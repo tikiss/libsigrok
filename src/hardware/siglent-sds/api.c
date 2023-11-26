@@ -200,7 +200,7 @@ static const struct siglent_sds_series supported_series[] = {
 	[SDS2000X] = {VENDOR(SIGLENT), "SDS2000X", SPO_MODEL,
 		{ 50, 1 }, { 500, 100000 }, 14, 8, 14000363},
 	[SDS2000XP] = {VENDOR(SIGLENT), "SDS2000X+", SPO_MODEL,
-		{ 50, 1 }, { 500, 100000 }, 10, 8, 14000363},
+		{ 50, 1 }, { 500, 100000 }, 14, 8, 14000363},
 };
 
 #define SERIES(x) &supported_series[x]
