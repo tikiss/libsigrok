@@ -173,6 +173,7 @@ enum series {
 	SDS1000XP,
 	SDS1000XE,
 	SDS2000X,
+	SDS2000XP,
 };
 
 /* short name, full name */
