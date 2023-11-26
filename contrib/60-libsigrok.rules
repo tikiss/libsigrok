@@ -284,9 +284,11 @@ ATTRS{idVendor}=="21a9", ATTRS{idProduct}=="1006", ENV{ID_SIGROK}="1"
 # f4ec:ee3a: E.g. SDS1052DL+ scope
 # f4ec:ee38: E.g. SDS1104X-E scope or SDM3055 Multimeter
 # f4ed:ee3a: E.g. SDS1202X-E scope or SDG1010 waveform generator
+# f4ec:1011: E.g. SDS2204X Plus scope
 ATTRS{idVendor}=="f4ec", ATTRS{idProduct}=="ee38", ENV{ID_SIGROK}="1"
 ATTRS{idVendor}=="f4ec", ATTRS{idProduct}=="ee3a", ENV{ID_SIGROK}="1"
 ATTRS{idVendor}=="f4ed", ATTRS{idProduct}=="ee3a", ENV{ID_SIGROK}="1"
+ATTRS{idVendor}=="f4ec", ATTRS{idProduct}=="1011", ENV{ID_SIGROK}="1"
 
 # sigrok FX2 LA (8ch)
 # fx2grok-flat (before and after renumeration)
