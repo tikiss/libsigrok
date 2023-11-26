@@ -64,6 +64,8 @@ static const uint32_t devopts_cg_analog[] = {
 };
 
 static const uint64_t timebases[][2] = {
+	/* picoseconds */
+	{ 500, 1000000000000 },
 	/* nanoseconds */
 	{ 1, 1000000000 },
 	{ 2, 1000000000 },
@@ -196,6 +198,8 @@ static const struct siglent_sds_series supported_series[] = {
 		{ 50, 1 }, { 500, 100000 }, 14, 8, 14000363},
 	[SDS2000X] = {VENDOR(SIGLENT), "SDS2000X", SPO_MODEL,
 		{ 50, 1 }, { 500, 100000 }, 14, 8, 14000363},
+	[SDS2000XP] = {VENDOR(SIGLENT), "SDS2000X+", SPO_MODEL,
+		{ 1000, 1 }, { 500, 100000 }, 10, 8, 14000363},
 };
 
 #define SERIES(x) &supported_series[x]
@@ -227,6 +231,7 @@ static const struct siglent_sds_model supported_models[] = {
 	{ SERIES(SDS2000X), "SDS2204X", { 2, 1000000000 }, 4, FALSE, 0 },
 	{ SERIES(SDS2000X), "SDS2302X", { 2, 1000000000 }, 2, FALSE, 0 },
 	{ SERIES(SDS2000X), "SDS2304X", { 2, 1000000000 }, 4, FALSE, 0 },
+	{ SERIES(SDS2000XP), "SDS2504X Plus", { 500, 1000000000000 }, 4, TRUE, 16 },
 };
 
 static struct sr_dev_driver siglent_sds_driver_info;
